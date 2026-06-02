@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "description": "Registry of algorithms and the explanation levels generated for each. Maintained by the learn-an-algorithm skill.",
+    "artifact_extension": "md",
+    "file_pattern": "level{n}-{slug}.{ext}",
+    "folder_pattern": "algos/{full algorithm name}/",
+    "folder_note": "Folder is the algorithm's full human-readable name (not the slug). Only the .md filename uses the slug. If a name contains '/', render that slash as ' - ' in the folder name since '/' is a path separator.",
+    "slug_rule": "lowercase; strip accents (é->e, –->-); replace any run of spaces/slashes/punctuation with a single hyphen; collapse repeated hyphens; trim leading/trailing hyphens",
+    "cascade": false,
+    "levels": {
+      "1": {"descriptor": "ELI5", "audience": "age ~5", "aliases": ["eli5", "5", "child", "kid"], "contains": "One analogy, zero jargon, the core idea in 1-2 sentences"},
+      "2": {"descriptor": "ELI10", "audience": "curious beginner", "aliases": ["eli10", "10", "beginner"], "contains": "Analogy + plain walk-through + why we care"},
+      "3": {"descriptor": "High-school student", "audience": "high school", "aliases": ["high school", "highschool", "teen"], "contains": "Concrete worked mini-example, numbered steps, intuition for how it works"},
+      "4": {"descriptor": "Undergraduate CS", "audience": "undergrad", "aliases": ["undergrad", "college", "cs student"], "contains": "Precise statement, pseudocode, Big-O time/space, correctness intuition, mermaid flow"},
+      "5": {"descriptor": "Graduate", "audience": "grad student", "aliases": ["grad", "graduate", "masters", "phd student"], "contains": "Formal definitions, proofs/bounds, design paradigm, edge cases, optimizations, detailed mermaid + pseudocode"},
+      "6": {"descriptor": "Researcher / frontier", "audience": "researcher", "aliases": ["researcher", "phd", "frontier", "expert", "sota"], "contains": "SOTA variants, theoretical frontiers, open problems, references, links to related problems"}
+    }
+  },
+  "algorithms": [
+    {"name": "Brute force enumeration", "slug": "brute-force-enumeration", "type": "Exact", "guarantee": "Optimal tour for very small n", "use": "Teaching and tiny instances", "problem": "TSP", "levels_completed": []},
+    {"name": "Held–Karp dynamic programming", "slug": "held-karp-dynamic-programming", "type": "Exact", "guarantee": "Optimal tour; time O(n^2·2^n)", "use": "Small–medium instances for exact benchmarking", "problem": "TSP", "levels_completed": []},
+    {"name": "Branch-and-bound", "slug": "branch-and-bound", "type": "Exact", "guarantee": "Optimal tour with pruning based on bounds", "use": "General exact solving up to moderate n", "problem": "TSP", "levels_completed": []},
+    {"name": "Branch-and-cut (ILP / Concorde-style)", "slug": "branch-and-cut-ilp-concorde-style", "type": "Exact", "guarantee": "Optimal tour; state-of-the-art exact performance", "use": "Research and high-accuracy benchmarks", "problem": "TSP", "levels_completed": []},
+    {"name": "MST doubling (tree-doubling)", "slug": "mst-doubling-tree-doubling", "type": "Approximation", "guarantee": "At most 2× optimal (metric TSP)", "use": "Fast approximate solution with guarantee", "problem": "TSP", "levels_completed": []},
+    {"name": "Christofides–Serdyukov", "slug": "christofides-serdyukov", "type": "Approximation", "guarantee": "At most 1.5× optimal (metric TSP)", "use": "Balanced quality/speed with worst-case bound", "problem": "TSP", "levels_completed": []},
+    {"name": "Nearest neighbor", "slug": "nearest-neighbor", "type": "Heuristic (constructive)", "guarantee": "No guarantee; often decent but can be poor", "use": "Very fast initial tours or simple demos", "problem": "TSP", "levels_completed": []},
+    {"name": "Greedy edge-selection (cheapest link)", "slug": "greedy-edge-selection-cheapest-link", "type": "Heuristic (constructive)", "guarantee": "No guarantee; depends on instance", "use": "Quick starting tour with simple logic", "problem": "TSP", "levels_completed": []},
+    {"name": "Nearest insertion", "slug": "nearest-insertion", "type": "Heuristic (constructive)", "guarantee": "No formal bound in general", "use": "Better initial tours than raw nearest neighbor in many cases", "problem": "TSP", "levels_completed": []},
+    {"name": "Cheapest insertion", "slug": "cheapest-insertion", "type": "Heuristic (constructive)", "guarantee": "No formal bound in general", "use": "Good constructive heuristic for routing tasks", "problem": "TSP", "levels_completed": []},
+    {"name": "Random / farthest insertion", "slug": "random-farthest-insertion", "type": "Heuristic (constructive)", "guarantee": "No formal bound", "use": "Generating diverse starting tours", "problem": "TSP", "levels_completed": []},
+    {"name": "2-opt local search", "slug": "2-opt-local-search", "type": "Heuristic (improvement)", "guarantee": "No guarantee; usually large improvement over initial tour", "use": "Core local search operator in many solvers", "problem": "TSP", "levels_completed": []},
+    {"name": "3-opt local search", "slug": "3-opt-local-search", "type": "Heuristic (improvement)", "guarantee": "No guarantee; better quality than 2-opt but slower", "use": "Higher-quality improvement for small–medium n", "problem": "TSP", "levels_completed": []},
+    {"name": "Lin–Kernighan heuristic", "slug": "lin-kernighan-heuristic", "type": "Heuristic (improvement)", "guarantee": "No guarantee; near-optimal in practice on many benchmarks", "use": "High-quality tours for large instances", "problem": "TSP", "levels_completed": []},
+    {"name": "Chained Lin–Kernighan", "slug": "chained-lin-kernighan", "type": "Heuristic (improvement)", "guarantee": "No guarantee; often extremely close to optimal", "use": "Large-scale high-quality heuristic solving", "problem": "TSP", "levels_completed": []},
+    {"name": "Simulated annealing", "slug": "simulated-annealing", "type": "Metaheuristic", "guarantee": "No guarantee; stochastic", "use": "Escape local minima with probabilistic search", "problem": "TSP", "levels_completed": []},
+    {"name": "Genetic algorithm / evolutionary algorithm", "slug": "genetic-algorithm-evolutionary-algorithm", "type": "Metaheuristic", "guarantee": "No guarantee; stochastic", "use": "Flexible global search across many variants", "problem": "TSP", "levels_completed": []},
+    {"name": "Ant colony optimization", "slug": "ant-colony-optimization", "type": "Metaheuristic", "guarantee": "No guarantee; often good on structured instances", "use": "Bio-inspired global search for routing tasks", "problem": "TSP", "levels_completed": []},
+    {"name": "Tabu search", "slug": "tabu-search", "type": "Metaheuristic", "guarantee": "No guarantee; avoids cycling", "use": "Intensified local search with memory", "problem": "TSP", "levels_completed": []},
+    {"name": "Iterated local search", "slug": "iterated-local-search", "type": "Metaheuristic", "guarantee": "No guarantee; layered on local search", "use": "Refining tours via repeated perturbation and improvement", "problem": "TSP", "levels_completed": []},
+    {"name": "Variable neighborhood search", "slug": "variable-neighborhood-search", "type": "Metaheuristic", "guarantee": "No guarantee; systematic neighborhood changes", "use": "Balancing diversification and intensification", "problem": "TSP", "levels_completed": []},
+    {"name": "GRASP", "slug": "grasp", "type": "Metaheuristic", "guarantee": "No guarantee; multi-start greedy + local search", "use": "Robust heuristic for many combinatorial problems", "problem": "TSP", "levels_completed": []}
+  ]
+}
