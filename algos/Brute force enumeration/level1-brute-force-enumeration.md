@@ -1,6 +1,7 @@
 # Brute force enumeration — Level 1: ELI5
 
-> **Problem:** TSP  ·  **Type:** Exact  ·  **Guarantee:** Optimal tour for very small n
+> **Example problems:** Traveling Salesman Problem, Vehicle Routing Problem (tiny), small permutation / sequencing problems  ·  **Type:** Exact  ·  **Guarantee:** Optimal tour for very small n
+> **Used for:** Teaching and tiny instances; ground-truth baseline to check other methods
 > **Level 1 of 6** — explain-like-I'm-5: one analogy, no jargon. See sibling files for other levels.
 
 ---
