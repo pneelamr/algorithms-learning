@@ -17,7 +17,7 @@
     }
   },
   "algorithms": [
-    {"name": "Brute force enumeration", "slug": "brute-force-enumeration", "type": "Exact", "guarantee": "Optimal tour for very small n", "use": "Teaching and tiny instances", "problem": "TSP", "levels_completed": []},
+    {"name": "Brute force enumeration", "slug": "brute-force-enumeration", "type": "Exact", "guarantee": "Optimal tour for very small n", "use": "Teaching and tiny instances", "problem": "TSP", "levels_completed": [1]},
     {"name": "Held–Karp dynamic programming", "slug": "held-karp-dynamic-programming", "type": "Exact", "guarantee": "Optimal tour; time O(n^2·2^n)", "use": "Small–medium instances for exact benchmarking", "problem": "TSP", "levels_completed": []},
     {"name": "Branch-and-bound", "slug": "branch-and-bound", "type": "Exact", "guarantee": "Optimal tour with pruning based on bounds", "use": "General exact solving up to moderate n", "problem": "TSP", "levels_completed": []},
     {"name": "Branch-and-cut (ILP / Concorde-style)", "slug": "branch-and-cut-ilp-concorde-style", "type": "Exact", "guarantee": "Optimal tour; state-of-the-art exact performance", "use": "Research and high-accuracy benchmarks", "problem": "TSP", "levels_completed": []},
