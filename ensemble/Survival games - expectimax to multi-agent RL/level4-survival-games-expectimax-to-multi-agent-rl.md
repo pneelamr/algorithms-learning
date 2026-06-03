@@ -1,6 +1,6 @@
 # Survival games: expectimax to multi-agent RL — Level 4: Undergraduate CS
 
-> **Example problems:** Battle royale (Fortnite / PUBG), poker, partially-observable stochastic games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** Expectimax/expectiminimax are exact for the modeled tree; under partial observability + many agents, exact optimal play is intractable (no guarantee)
+> **Example problems:** Battle royale (Fortnite / PUBG / Call of Duty Warzone), poker, partially-observable stochastic games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** Expectimax/expectiminimax are exact for the modeled tree; under partial observability + many agents, exact optimal play is intractable (no guarantee)
 > **Used for:** Maximizing expected survival/placement under uncertainty in many-player stochastic games, rather than greedily taking the nearest reward
 > **Level 4 of 6** — undergrad CS: precise statement, pseudocode, Big-O, correctness intuition, control-flow diagram. See sibling files for other levels.
 

@@ -1,6 +1,6 @@
 # Survival games: expectimax to multi-agent RL — Level 3: High-school student
 
-> **Example problems:** Battle royale (Fortnite / PUBG), poker, partially-observable many-player games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** None; hidden info, randomness, and many agents preclude exact optimal play
+> **Example problems:** Battle royale (Fortnite / PUBG / Call of Duty Warzone), poker, partially-observable many-player games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** None; hidden info, randomness, and many agents preclude exact optimal play
 > **Used for:** Choosing actions that maximize expected survival/placement under uncertainty, instead of greedily taking the nearest kill
 > **Level 3 of 6** — high-school: a worked mini-example with real numbers, numbered steps, and intuition for how it works and where it differs from chess. See sibling files for other levels.
 

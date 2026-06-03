@@ -1,6 +1,6 @@
 # Survival games: expectimax to multi-agent RL — Level 6: Researcher / frontier
 
-> **Example problems:** Battle royale (Fortnite / PUBG), poker, real-time strategy (StarCraft / Dota), partially-observable stochastic games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** Exact only for small expectimax/POMDP; CFR → Nash in 2p zero-sum; large general-sum POSGs have no convergence/exploitability guarantee
+> **Example problems:** Battle royale (Fortnite / PUBG / Call of Duty Warzone), poker, real-time strategy (StarCraft / Dota), partially-observable stochastic games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** Exact only for small expectimax/POMDP; CFR → Nash in 2p zero-sum; large general-sum POSGs have no convergence/exploitability guarantee
 > **Used for:** Expected-survival optimization under partial observability among many adaptive agents — and the research program to make it scalable, equilibrium-grounded, and risk-aware
 > **Level 6 of 6** — researcher: SOTA, theoretical frontiers, open problems, references, links to related problems. See sibling files for other levels.
 

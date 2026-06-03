@@ -1,6 +1,6 @@
 # Survival games: expectimax to multi-agent RL — Level 5: Graduate
 
-> **Example problems:** Battle royale (Fortnite / PUBG), poker, partially-observable stochastic games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** Expectimax exact on the modeled tree; CFR converges to Nash in 2p zero-sum; general-sum POSGs have no canonical solution and no convergence guarantee
+> **Example problems:** Battle royale (Fortnite / PUBG / Call of Duty Warzone), poker, partially-observable stochastic games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** Expectimax exact on the modeled tree; CFR converges to Nash in 2p zero-sum; general-sum POSGs have no canonical solution and no convergence guarantee
 > **Used for:** Maximizing expected survival/placement under uncertainty among many adaptive agents, rather than greedily taking local rewards
 > **Level 5 of 6** — graduate: formal models, paradigm, bounds/convergence, the risk/survival objective, edge cases, optimizations. See sibling files for other levels.
 

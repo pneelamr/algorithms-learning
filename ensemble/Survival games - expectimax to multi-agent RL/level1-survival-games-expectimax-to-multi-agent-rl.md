@@ -1,6 +1,6 @@
 # Survival games: expectimax to multi-agent RL — Level 1: ELI5
 
-> **Example problems:** Battle royale (Fortnite / PUBG), poker, hide-and-seek-style many-player games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** None — too much hidden, too random, too many players for a perfect plan
+> **Example problems:** Battle royale (Fortnite / PUBG / Call of Duty Warzone), poker, hide-and-seek-style many-player games  ·  **Type:** Stochastic + imperfect-info + multi-agent RL (ensemble)  ·  **Guarantee:** None — too much hidden, too random, too many players for a perfect plan
 > **Used for:** Picking actions that give you the best chance of *being the last one standing*, instead of grabbing the nearest target right now
 > **Level 1 of 6** — explain-like-I'm-5: one analogy, no jargon. See sibling files for other levels.
 
