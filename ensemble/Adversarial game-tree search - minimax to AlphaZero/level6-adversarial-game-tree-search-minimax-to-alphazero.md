@@ -1,4 +1,4 @@
-# Minimax to AlphaZero — Level 6: Researcher / frontier
+# Adversarial game-tree search - minimax to AlphaZero — Level 6: Researcher / frontier
 
 > **Example problems:** Chess, Go, Checkers, two-player zero-sum games (and, at the frontier, imperfect-information and general games)  ·  **Type:** Adversarial search + RL (ensemble)  ·  **Guarantee:** Exact for full-depth alpha-beta; for learned-eval + search, only empirical — no general convergence/exploitability bound
 > **Used for:** Long-horizon optimal play over greedy local gains, with self-play-learned evaluation — and the research program around making that sample-efficient, model-based, and theoretically understood

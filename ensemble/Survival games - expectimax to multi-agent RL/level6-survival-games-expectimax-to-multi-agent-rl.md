@@ -29,7 +29,7 @@ Two anchors. **(a) Equilibrium branch** — imperfect-information *solving* via 
 **Imperfect-information solving (the rigorous branch):**
 - **DeepStack** (Moravčík et al. 2017) — *continual re-solving* with deep counterfactual value networks; first to beat pros at heads-up no-limit hold'em.
 - **Libratus** (Brown & Sandholm 2017) and **Pluribus** (2019, 6-max, superhuman) — abstraction + CFR + **depth-limited subgame solving**; Pluribus showed multiplayer poker is tractable with self-play + limited search despite no equilibrium guarantee for >2 players.
-- **ReBeL** (Brown et al. 2020) and **Player of Games** (Schmid et al. 2021) — *unify* the AlphaZero search+RL recipe with CFR over **public belief states**, a single algorithm spanning perfect- and imperfect-information games. This is the closest thing to a bridge from *Minimax to AlphaZero* into this ensemble's territory.
+- **ReBeL** (Brown et al. 2020) and **Player of Games** (Schmid et al. 2021) — *unify* the AlphaZero search+RL recipe with CFR over **public belief states**, a single algorithm spanning perfect- and imperfect-information games. This is the closest thing to a bridge from *adversarial game-tree search* into this ensemble's territory.
 
 **Deep multi-agent RL (the scalable branch):**
 - **OpenAI Five** (Berner et al. 2019) — PPO at massive scale beat Dota 2 world champions; long horizons, partial obs, team coordination via shared reward shaping.
@@ -65,7 +65,7 @@ Two anchors. **(a) Equilibrium branch** — imperfect-information *solving* via 
 
 ## 6. Links to related problems
 
-- **Perfect-information sibling:** [[minimax-to-alphazero]] — same "decline the greedy move for the long-horizon win," but minimax/α-β/MCTS instead of expectation+belief+equilibrium.
+- **Perfect-information sibling:** [[adversarial-game-tree-search-minimax-to-alphazero]] — same "decline the greedy move for the long-horizon win," but minimax/α-β/MCTS instead of expectation+belief+equilibrium.
 - **Game theory:** Nash / correlated / coarse-correlated equilibria, regret minimization (CFR), Shapley stochastic games, mean-field games, war of attrition.
 - **Decision-theoretic planning:** POMDPs, belief MDPs, POMCP, sparse sampling, distributional & risk-sensitive RL (CVaR).
 - **MARL machinery:** PPO/actor-critic, self-play, NFSP, PSRO/`α`-Rank, league training, CTDE, autocurricula.

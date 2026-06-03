@@ -1,4 +1,4 @@
-# Minimax to AlphaZero — Level 3: High-school student
+# Adversarial game-tree search - minimax to AlphaZero — Level 3: High-school student
 
 > **Example problems:** Chess, Go, Checkers, two-player zero-sum games  ·  **Type:** Adversarial search + RL (ensemble)  ·  **Guarantee:** Minimax is optimal against optimal play at full depth; the learned/self-play components have no guarantee
 > **Used for:** Picking the move that wins the game later instead of the move that grabs the most material now — and learning better evaluations across games

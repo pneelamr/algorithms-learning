@@ -1,4 +1,4 @@
-# Minimax to AlphaZero — Level 2: ELI10
+# Adversarial game-tree search - minimax to AlphaZero — Level 2: ELI10
 
 > **Example problems:** Chess, Go, Checkers, two-player zero-sum games  ·  **Type:** Adversarial search + RL (ensemble)  ·  **Guarantee:** Minimax is perfect against perfect play if you can look all the way to the end; the learned part has no promise
 > **Used for:** Picking the move that *wins the game later* instead of the move that *grabs the most stuff right now* — and getting better every time you play
@@ -10,7 +10,7 @@
 
 You're playing chess and you spot a free pawn. The **greedy** move is obvious: grab it. Greedy means *always do the best-looking thing right in front of you.* It's fast, but it has no idea what happens next — and in chess, "next" is where you win or lose.
 
-A strong player (or a strong program) instead **thinks ahead**. This whole bundle of ideas — from old-school "think ahead" to modern "teach yourself" — is what we're calling **Minimax to AlphaZero**. Here are its parts in plain words:
+A strong player (or a strong program) instead **thinks ahead**. This whole bundle of ideas — from old-school "think ahead" to modern "teach yourself" — is what we're calling **adversarial game-tree search** — the arc from **minimax to AlphaZero**. Here are its parts in plain words:
 
 1. **Greedy (the thing we're beating).** Take the best immediate gain. Simple, but short-sighted — it'll happily grab a "poisoned" pawn that loses the game.
 

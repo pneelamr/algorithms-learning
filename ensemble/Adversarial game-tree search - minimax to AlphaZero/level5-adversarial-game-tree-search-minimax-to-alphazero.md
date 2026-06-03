@@ -1,4 +1,4 @@
-# Minimax to AlphaZero — Level 5: Graduate
+# Adversarial game-tree search - minimax to AlphaZero — Level 5: Graduate
 
 > **Example problems:** Chess, Go, Checkers, two-player zero-sum games  ·  **Type:** Adversarial search + RL (ensemble)  ·  **Guarantee:** Alpha-beta returns the exact minimax value; with depth limit + function-approximated eval, no convergence/optimality guarantee in general
 > **Used for:** Choosing long-horizon optimal play over greedy local gains in adversarial games, and learning evaluations across games

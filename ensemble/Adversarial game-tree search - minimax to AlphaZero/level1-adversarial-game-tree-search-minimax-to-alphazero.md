@@ -1,4 +1,4 @@
-# Minimax to AlphaZero — Level 1: ELI5
+# Adversarial game-tree search - minimax to AlphaZero — Level 1: ELI5
 
 > **Example problems:** Chess, Go, Checkers, two-player zero-sum games  ·  **Type:** Adversarial search + RL (ensemble)  ·  **Guarantee:** Minimax is perfect against perfect play if you can look all the way to the end; the "learning" part has no promise
 > **Used for:** Picking the move that *wins the game later* instead of the move that *grabs the most stuff right now* — and getting better every time you play

@@ -57,7 +57,7 @@ Two coupled axes define the field: **cooperative** (within-team credit assignmen
 
 ## 6. Links to related problems
 
-- **Family siblings:** [[minimax-to-alphazero]] (2-player zero-sum, perfect info — the search/value-learning cousin) and [[survival-games-expectimax-to-multi-agent-rl]] (N-player free-for-all survival — Search & Destroy is the **hybrid bridge** between that ensemble and this one).
+- **Family siblings:** [[adversarial-game-tree-search-minimax-to-alphazero]] (2-player zero-sum, perfect info — the search/value-learning cousin) and [[survival-games-expectimax-to-multi-agent-rl]] (N-player free-for-all survival — Search & Destroy is the **hybrid bridge** between that ensemble and this one).
 - **Cooperative MARL:** Dec-POMDP, CTDE, value decomposition (VDN/QMIX/QTRAN), COMA, MAPPO, MADDPG.
 - **Competitive learning:** self-play, PSRO/α-Rank, league training, population-based training.
 - **Coordination theory:** ad hoc teamwork, zero-shot coordination (other-play, off-belief learning), emergent communication, theory of mind (Hanabi).
