@@ -14,7 +14,7 @@ Cheapest insertion is the **joint-minimization** member of the constructive inse
 Constructive heuristic        metric worst-case ratio       empirical (rand. Euclidean)
   Nearest insertion           ≤ 2 (tight)                    ~20%
   Cheapest insertion          ≤ 2 (tight)                    ~15–20%      ← this entry
-  Farthest insertion          weaker worst case (~2.43-flavored)  ~10–15% (best of family)
+  Farthest insertion          no constant proven; O(log n) generic  ~10–15% (best of family)
   Random insertion            O(log n)-type expected; strong  ~10–15%
   Christofides (approx.)       3/2                            ~10%
 ```

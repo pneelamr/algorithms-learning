@@ -14,12 +14,12 @@ Nearest neighbor is the **simplest constructive TSP heuristic** and the canonica
 Constructive heuristics (build a tour), worst-case metric ratio:
   Nearest neighbor          Θ(log n)        ← this entry (greedy next-vertex)
   Greedy edge / cheapest-link   Θ(log n)    (greedy on edges, matroid-flavored but not a tour matroid)
-  Nearest / cheapest insertion  ≤ 2         (insertion family — constant ratio!)
-  Farthest insertion        ≈ 2.43 (empirically excellent)
+  Nearest / cheapest insertion  ≤ 2         (constant — nearest/cheapest only)
+  Farthest / random insertion   no constant proven; O(log n) generic (empirically best)
 Then: 2-opt / Or-opt / Lin–Kernighan polish any of the above.
 ```
 
-Notably the **insertion** heuristics achieve a *constant* ratio (≤ 2) where nearest neighbor cannot — a key theoretical contrast covered in those siblings.
+Notably **nearest and cheapest insertion** achieve a *constant* ratio (≤ 2) where nearest neighbor cannot (farthest and random insertion only the generic `O(log n)` bound, but empirically best) — a key theoretical contrast covered in those siblings.
 
 ## 2. Tight worst-case theory
 
@@ -57,7 +57,7 @@ NN itself is theoretically settled (`Θ(log n)` worst case, `Θ(n²)` time); its
 
 ## 7. Links to related problems
 
-- **Constructive siblings (this registry):** Greedy edge-selection (cheapest link), Nearest insertion, Cheapest insertion, Random/farthest insertion — the insertion family achieves constant ratios NN cannot.
+- **Constructive siblings (this registry):** Greedy edge-selection (cheapest link); Nearest insertion and Cheapest insertion (constant ≤ 2, which NN cannot); Random/farthest insertion (no constant proven — only the generic `O(log n)` bound — but empirically best).
 - **Improvement partners:** 2-opt, 3-opt, Lin–Kernighan, chained LK — consume NN tours and specifically repair NN's long closing/orphan edges.
 - **Approximation contrast:** MST doubling (2) and Christofides (3/2) — why a *constant* guarantee needs structure (MST/matching) beyond greedy nexting.
 - **Paradigm:** greedy algorithms (and the matroid theory that explains when greedy *is* optimal — Kruskal vs NN), online algorithms / competitive analysis, neural combinatorial optimization.

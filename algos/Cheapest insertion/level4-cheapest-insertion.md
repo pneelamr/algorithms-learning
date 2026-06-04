@@ -82,8 +82,8 @@ flowchart TD
 |-----------|----------------|--------------|
 | Nearest insertion | vertex nearest the tour | ≤ 2 |
 | **Cheapest insertion** | vertex+position of smallest *insertion cost* | **≤ 2** |
-| Farthest insertion | vertex farthest from the tour | ≤ ~2.43 (empirically excellent) |
-| Random insertion | random vertex | strong in practice |
+| Farthest insertion | vertex farthest from the tour | no constant proven; `O(log n)` generic (empirically excellent) |
+| Random insertion | random vertex | no constant proven; `O(log n)` generic; strong in practice |
 
 ## One-line summary
 

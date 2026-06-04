@@ -15,7 +15,7 @@ Constructive heuristic        metric worst-case ratio    empirical (rand. Euclid
   Nearest neighbor             Θ(log n)                   ~25% over OPT
   Greedy-edge / multi-fragment Θ(log n)                   ~10–15% over OPT   ← this entry
   Nearest / cheapest insertion ≤ 2  (constant!)           ~15–20% over OPT
-  Farthest insertion           ~2.43                      ~10–15% over OPT
+  Farthest / random insertion  no constant; O(log n) gen. ~10–15% over OPT
   Christofides (approx.)        3/2                        ~10% over OPT
 Then 2-opt / Or-opt / Lin–Kernighan polish any seed to ~1–5% over OPT.
 ```
@@ -51,7 +51,7 @@ Greedy-edge itself is theoretically settled (`Θ(log n)` worst case, `Θ(n² log
 
 ## 6. Links to related problems
 
-- **Constructive siblings (this registry):** Nearest neighbor (vertex-greedy counterpart, same `Θ(log n)`), Nearest/Cheapest/Random–farthest insertion (insertion family, *constant* ratio).
+- **Constructive siblings (this registry):** Nearest neighbor (vertex-greedy counterpart, same `Θ(log n)`); Nearest/Cheapest insertion (constant ≤ 2); Random–farthest insertion (no constant proven — only the generic `O(log n)` bound — empirically best).
 - **Structural cousin:** minimum spanning tree (Kruskal — same greedy, single matroid ⇒ optimal); the contrast is the whole pedagogical point.
 - **Improvement partners:** 2-opt, 3-opt, Lin–Kernighan, chained LK consume greedy-edge tours as seeds.
 - **Relaxations:** 2-factor / 2-matching, matroid intersection, min-weight perfect matching (Christofides' ingredient); Clarke–Wright savings for VRP.

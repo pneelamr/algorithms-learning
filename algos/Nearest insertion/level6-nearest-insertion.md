@@ -8,7 +8,7 @@
 
 ## 1. Position: the constant-ratio constructive tier
 
-Nearest insertion is the entry point to the **insertion family**, the constructive heuristics that — unlike nearest neighbor and greedy-edge (`Θ(log n)`) — achieve **constant** metric approximation ratios by maintaining a sub-tour and growing it via cheapest placement:
+Nearest insertion is the entry point to the **insertion family** — whose **nearest and cheapest** members achieve **constant** (≤ 2) metric approximation ratios (unlike nearest neighbor and greedy-edge at `Θ(log n)`) by maintaining a sub-tour and growing it via cheapest placement. (The **farthest** and **random** members share the family's machinery but have **no proven constant** — only the generic `O(log n)` insertion bound — though they are the best empirically; see the table.)
 
 ```
 Constructive heuristic        metric worst-case ratio       empirical (rand. Euclidean)
@@ -16,7 +16,7 @@ Constructive heuristic        metric worst-case ratio       empirical (rand. Euc
   Greedy-edge / multi-fragment Θ(log n)                      ~10–15%
   Nearest insertion           ≤ 2 (tight)                    ~20%          ← this entry
   Cheapest insertion          ≤ 2                            ~15–20%
-  Farthest insertion          ≤ 2·⌈log n⌉ +0.16... (RSL) but ≈2.43-flavored; best empirically  ~10–15%
+  Farthest insertion          no constant proven; O(log n) generic (RSL ⌈log₂ n⌉+1); best empirically  ~10–15%
   Random insertion            O(log n) expected bound; very strong empirically  ~10–15%
   Christofides (approx.)       3/2                            ~10%
 ```
